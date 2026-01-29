@@ -11,7 +11,7 @@ import ExplorePage from './pages/ExplorePage';
 import GeneralSettingsPanel from './pages/GeneralSettingsPanel';
 import './App.css';
 // login feature work
-
+//new
 function App() {
   return (
     <Router>
