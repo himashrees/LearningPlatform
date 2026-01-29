@@ -1,0 +1,48 @@
+.focus-quiz {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 12px rgba(0, 188, 212, 0.25);
+  color: #e0f7fa;
+}
+
+.focus-quiz h3 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #00bcd4;
+}
+
+.question-box {
+  margin-bottom: 20px;
+}
+
+.question-box h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #81d4fa;
+}
+
+.question-box button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  background-color: #263238;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.question-box button:hover {
+  background-color: #37474f;
+}
+
+.score {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #00e676;
+  margin-top: 10px;
+}

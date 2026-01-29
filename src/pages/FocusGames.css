@@ -1,0 +1,35 @@
+.focus-games {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #ffe0b2;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 152, 0, 0.3);
+}
+
+.focus-games h3 {
+  font-size: 1.4rem;
+  color: #ffb74d;
+  margin-bottom: 15px;
+}
+
+.focus-games ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.focus-games li {
+  margin-bottom: 12px;
+}
+
+.focus-games a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffcc80;
+  transition: color 0.3s ease;
+}
+
+.focus-games a:hover {
+  color: #ffab40;
+  text-decoration: underline;
+}

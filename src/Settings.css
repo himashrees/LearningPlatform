@@ -1,0 +1,134 @@
+/* Container */
+.settings-container {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 30px 35px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a1a1a;
+}
+
+/* Header */
+.settings-header {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 28px;
+  border-bottom: 3px solid #00bcd4;
+  padding-bottom: 12px;
+  letter-spacing: 0.03em;
+}
+
+/* Field wrapper */
+.settings-field {
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.settings-label {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  color: #333333;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+/* Input & Select */
+.settings-input,
+.settings-select {
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline-offset: 2px;
+  outline-color: transparent;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  font-family: inherit;
+  color: #222222;
+  background-color: #fafafa;
+}
+
+.settings-input:focus,
+.settings-select:focus {
+  border-color: #00bcd4;
+  box-shadow: 0 0 8px #00bcd4aa;
+  background-color: #fff;
+}
+
+/* Checkbox */
+.settings-checkbox {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  accent-color: #00bcd4; /* modern accent */
+  transition: accent-color 0.3s ease;
+}
+
+.settings-checkbox:hover {
+  accent-color: #0097a7;
+}
+
+/* Buttons container */
+.settings-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 36px;
+}
+
+/* Buttons */
+.settings-button {
+  flex: 1 1 45%;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  user-select: none;
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.settings-button + .settings-button {
+  margin-left: 20px;
+}
+
+.settings-button-save {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+.settings-button-save:hover {
+  background-color: #0097a7;
+  box-shadow: 0 8px 20px #0097a7cc;
+}
+
+.settings-button-cancel {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.settings-button-cancel:hover {
+  background-color: #d32f2f;
+  box-shadow: 0 8px 20px #d32f2fcc;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .settings-container {
+    padding: 25px 20px;
+  }
+
+  .settings-buttons {
+    flex-direction: column;
+  }
+
+  .settings-button + .settings-button {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}

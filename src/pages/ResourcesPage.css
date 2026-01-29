@@ -1,0 +1,161 @@
+:root {
+  --bg-light: #f8f9fa;
+  --text-light: #333;
+  --bg-dark: #1e1e1e;
+  --text-dark: #0e0d0d;
+  --card-bg-light: rgb(23, 22, 22);
+  --card-bg-dark: #2a2a2a;
+}
+
+/* Main Page */
+.resources-page {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-light);
+  color: var(--text-light);
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.resources-page.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+h2{
+  color: #0e0d0d;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #002244;
+  color: white;
+  padding: 1rem 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.toggle-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0.4rem 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.toggle-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.card {
+  background: var(--card-bg-light);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.resources-page.dark .card {
+  background: var(--card-bg-dark);
+  box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0066cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Links */
+.link-list {
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.link-list li {
+  margin: 0.5rem 0;
+}
+
+.link-list a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link-list a:hover {
+  text-decoration: underline;
+}
+
+/* Search Input */
+.search-input {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.resources-page.dark .search-input {
+  background: #333;
+  color: #eee;
+  border: 1px solid #555;
+}

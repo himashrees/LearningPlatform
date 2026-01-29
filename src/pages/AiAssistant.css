@@ -1,0 +1,43 @@
+.ai-assistant {
+  background-color: #1e1e1e;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
+  color: #e0f7fa;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ai-assistant h3 {
+  font-size: 1.4rem;
+  color: #00bcd4;
+  margin-bottom: 15px;
+}
+
+.ai-assistant input,
+.ai-assistant textarea {
+  width: 100%;
+  background-color: #263238;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.ai-assistant button {
+  background-color: #00bcd4;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.ai-assistant button:hover {
+  background-color: #0097a7;
+}

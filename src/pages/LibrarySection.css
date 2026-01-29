@@ -1,0 +1,95 @@
+.library-section {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f4f6f9, #e0eafc);
+  min-height: 100vh;
+  color: #333;
+  text-align: center;
+  transition: background 0.4s ease-in-out;
+}
+
+.library-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #1e2a78;
+}
+
+.search-input {
+  width: 60%;
+  max-width: 400px;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 0 3px #a4cafe;
+}
+
+.search-btn {
+  padding: 0.8rem 1.5rem;
+  margin-left: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+.book-list {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.book-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(5px);
+  border: 1px solid #eee;
+}
+
+.book-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.book-card h3 {
+  margin: 0.5rem 0;
+  color: #0f3057;
+}
+
+.book-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.book-card a {
+  margin-top: 0.5rem;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #1e90ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.book-card a:hover {
+  background-color: #0b75d1;
+}

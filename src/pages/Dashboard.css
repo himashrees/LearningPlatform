@@ -1,0 +1,120 @@
+Dashboard.css
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #121212; /* Dark background to match HomePage dark theme */
+  color: #e0e0e0;      /* Light text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 20px 40px 20px;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #00bcd4; /* Blue border */
+}
+
+.navbar h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00bcd4; /* Blue color for logo text */
+}
+
+.nav-links a {
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #b0bec5;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+/* Content container with flexbox */
+.content {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Left side with routed content */
+.content > div:first-child {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 300px;
+  flex: 1;
+  min-height: 400px;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
+  overflow-y: auto;
+}
+
+/* Drawing board container */
+.content > div:last-child {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 300px;
+  flex: 1;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
+}
+
+/* AiAssistant at the bottom */
+.dashboard > .ai-assistant {
+  margin-top: 40px;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive - stack content on small screens */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .content > div {
+    min-width: auto;
+    width: 100%;
+    min-height: auto;
+  }
+}
+.content {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: nowrap; /* keep side-by-side */
+  justify-content: center;
+  height: 600px; /* fix height for now */
+}
+
+.content > div {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
+  overflow-y: auto;
+}
+
+.content > div:first-child {
+  flex: 1;
+  min-width: 300px;
+}
+
+.content > div:last-child {
+  flex: 1;
+  min-width: 300px;
+  height: 100%; /* take full height of parent */
+}
