@@ -8,7 +8,7 @@ import Recommendations from './pages/Recommendations';
 import Feedback from './pages/FeedbackForm';
 import Homepage from './pages/Homepage';
 import ExplorePage from './pages/ExplorePage';
-import GeneralSettingsPanel from './pages/GeneralSettingsPanel'; // New Settings page
+import GeneralSettingsPanel from './pages/GeneralSettingsPanel';
 import './App.css';
 
 function App() {
